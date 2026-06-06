@@ -1,0 +1,122 @@
+Website Name: OpenCart
+Website Link: https://demo.opencart.com/en-gb
+
+### Bug List
+
+1. On the Register page, when we fill the First Name and Last Name fields with numbers, the system accepts the values.
+
+2. On the Register page, the Password field accepts weak passwords like "1234", and the account gets created successfully.
+
+3. On the Register page, invalid email formats are also accepted. This needs to be fixed.
+
+4. The Forgot Password page redirects the user back to the Login page after submitting an email, but no success message is shown and no password reset email is received.
+
+5. In the My Account section, when I go to Edit Profile and try to change the email, there is no validation, and it also accepts invalid email formats.
+
+6. When a user adds a product to the wishlist, a success message is displayed, but the wishlist count still shows 0. The count only updates after opening or refreshing the Wishlist page.
+
+7. Checkout shows a "Product out of stock" warning for every product, even when a valid quantity is selected. The user is unable to proceed normally with checkout.
+
+8. Checkout is not working properly due to continuous stock validation warnings on products. Because of this, the Order History and Downloads features could not be fully accessed and tested.
+
+9. The Back button color and design are too light. Because of this, elderly users or users with weak eyesight may not notice the button easily. Button visibility and contrast should be improved for better user experience and accessibility.
+
+10. On the product page (Apple Cinema 30"), after filling all required fields, uploading a file, and selecting the minimum quantity, clicking the Add to Cart button does not add the product to the cart. No success or error message is shown, and the cart count remains unchanged.
+
+11. On the Add to Cart page, the opacity of the Continue Shopping button is too low. Elderly users may not be able to find this button easily.
+
+12. There is no visible Product Comparison button or link in the website header/menu. Users can access the Comparison page only from the temporary success message after adding a product for comparison. Once the message disappears, users cannot easily open the Comparison page again.
+
+13. Product images are not displaying properly for Product 8. A placeholder image is shown on the Product Listing page, and no product image is visible on the Product Details page. This makes it difficult for users to identify the product and affects the overall shopping experience. The actual product image should be displayed correctly on both pages.
+
+14. On the Product page, when I select the Sort By feature and choose Rating, ratings are not visible on any product.
+
+15. In the Product Category section, when I select the MP3 category, it also shows iPad products.
+
+16. Some products show "In Stock", but when they are added to the cart, they show as unavailable.
+
+17. When we try to add a review for a product and click Continue, no success message is shown, and the review is not added.
+
+18. On the Product Details page, the Back button visibility is very low and needs to be improved.
+
+19. On the Contact page, when we enter numbers in the Name field, the form is submitted successfully.
+
+20. On the Contact page, invalid email formats are also accepted. This needs to be fixed.
+
+21. On the Product Return page, when I enter a random Order ID and random product details without placing any order, the return request is submitted successfully. The system should validate the Order ID and product details before allowing the return request submission.
+
+22. On the Affiliate Account page, only the Cheque Payee Name field is mandatory. Other fields such as Company Name, Website Name, and Tax Number are not mandatory. This needs to be fixed.
+
+23. When I add a Gift Card and proceed to checkout, then go to the Payment Method section, the payment method field shows "null". When I click the input field to select a payment method, nothing appears, and I cannot enter it manually.
+
+24. On the Product Listing page, some product images are too close to the image border and do not have proper spacing. All product images should have equal padding and alignment for a better UI.
+
+25. On the Product Listing page in List View, some product images are too close to the image container border and are not properly aligned. Images should have proper spacing and consistent padding in List View as well.
+
+26. When opening the Apple Cinema 30 product details page, the thumbnail images below the main product image show products from different categories (camera, desktop, laptop, etc.). Thumbnails should only display images related to the selected product.
+
+27. When I try to remove a Gift Card from my cart, it is not removed. Clicking the Remove button shows an error.
+
+28. When we open the Edit Address page, the page heading is too close to the First Name field.
+
+29. On the Edit Address page, the field outlines are too light. They should be slightly darker for better visibility.
+
+30. On the Return Products page, when we hover over the View icon, the icon background changes to sky blue for about one second.
+
+---
+
+### Tablet Testing (768px × 1024px)
+
+31. On tablet devices, the site logo and search bar overlap each other.
+
+32. On tablet view, when we open the Categories menu and then close it, the focus border/highlight on the menu icon does not disappear. The menu icon should return to its normal state after closing the menu.
+
+33. On tablet view, some items on the Featured page are very close to the card border.
+
+34. On tablet view, form labels such as "First Name" and "Last Name" break into multiple lines. Labels should remain on a single line and maintain proper alignment for better readability.
+
+35. On tablet view, the same issue is observed with other form labels as well.
+
+36. On the Wishlist page, PHP warning messages are displayed to users at the top of the page. The system should not expose backend warnings or server errors to end users.
+
+37. On the Wishlist page, stock status is not displayed for some products. Stock information should be shown correctly for all products.
+
+38. At tablet width, the Wishlist table looks cramped, and some content wraps into multiple lines (e.g., Product Name and Model).
+
+39. On the About Us page, the content is missing and only the page title is displayed. Users are unable to view company information.
+
+40. When we click some footer navigation links, only the page title is displayed and no content is shown.
+
+41. On tablet view, in the Affiliate Information page, labels such as "Payment Method" and "Cheque Payee Name" break into multiple lines and affect form alignment. Labels should remain properly aligned and readable on tablet devices.
+
+42. On tablet view, the Product Comparison table is not properly responsive. Table content becomes compressed and difficult to read due to limited screen width.
+
+43. On tablet view, the Product Comparison page requires excessive horizontal scrolling to view complete product details. Comparison data should be displayed in a user-friendly responsive layout.
+
+44. On tablet view, the cart dropdown overlaps page content when opened. The dropdown should be positioned properly to avoid covering page information.
+
+---
+
+### Mobile Testing (375px)
+
+45. On mobile view, slider navigation arrows appear oversized and occupy excessive space on the banner. Arrow size should be optimized for smaller screens to maintain proper visual balance.
+
+46. On mobile view, page content appears too close to container borders and has very limited side spacing. Proper padding should be maintained for better readability and visual appearance.
+
+47. On mobile view, the product image on the Product Details page is too close to the image container border and does not have proper spacing. The image should have equal padding from all sides.
+
+48. On mobile view, the product thumbnail images below the main image overlap each other and are not properly aligned. Thumbnail images should maintain proper spacing and alignment for a better user experience.
+
+49. On mobile view, the Login page displays the "New Customer" and "Returning Customer" sections side by side, making the content compressed and difficult to read. The sections should be stacked vertically for better mobile usability.
+
+50. On mobile view, the Wishlist table is not properly responsive. Table columns become compressed, and content is difficult to read on small screens.
+
+51. On mobile view, the Shopping Cart table is not properly responsive. Table columns become compressed, and content is difficult to read on small screens. The Shopping Cart layout should be optimized for mobile devices.
+
+52. On mobile screens, the Checkout icon is not clickable.
+
+53. On mobile view, breadcrumb navigation alignment is broken on the Edit Address page. Breadcrumb items wrap into multiple lines and affect the page layout. Breadcrumb navigation should remain properly aligned and readable on small screens.
+
+54. On mobile view, the Product Returns table is not properly responsive. Table columns become compressed, and headers/content break into multiple lines, making the information difficult to read.
+
+55. On mobile view, the Product Comparison page is not properly responsive. The comparison table overflows the screen, and content is cut off, forcing users to scroll horizontally to view product details.
